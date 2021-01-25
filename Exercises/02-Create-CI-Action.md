@@ -110,4 +110,4 @@ To protect our main branch and require at least one review and a passing test, p
 1. Select the **Require pull request reviews before merging** checkbox.
 1. Select the **Require status checks to pass before merging** checkbox.
 1. Select the **Continuous Integration** checkbox in the Status checks found in the last week for this repository.
-1. Click **Save changes**.
+1. Click **Create**.
