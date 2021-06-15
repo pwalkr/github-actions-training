@@ -96,18 +96,3 @@ When we push a change to a branch, the GitHub Action will clone the repository c
 
 1. Merge the pull request.
 
-## Step 3: Add branch protection rules
-
-The last two pull requests we created and merged, were able to be merged without a required review. While this might work for this training repository, it doesn't scale well in the real world with business critical systems. Through the use of protected branches, we can enforce required reviews on pull requests to specific branches on our repository.
-
-To protect our main branch and require at least one review and a passing test, perform the following:
-
-1. On GitHub, navigate to the main page of the repository.
-1. Under your repository name, click **Settings**.
-1. In the left menu, click **Branches**.
-1. Next to "Branch protection rules", click **Add rule**.
-1. Under "Branch name pattern", type `main`.
-1. Select the **Require pull request reviews before merging** checkbox.
-1. Select the **Require status checks to pass before merging** checkbox.
-1. Select the **Continuous Integration** checkbox in the Status checks found in the last week for this repository.
-1. Click **Create**.
