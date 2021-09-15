@@ -60,7 +60,8 @@ The objective of *Continuous Testing* is to achieve constant feedback on your ch
           - name: Lint Code Base
             uses: github/super-linter@v3
             env:
-              VALIDATE_ALL_CODEBASE: false
+              VALIDATE_ALL_CODEBASE: true
+              DEFAULT_BRANCH: main
               GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     ```
 
