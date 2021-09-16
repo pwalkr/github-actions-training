@@ -12,7 +12,6 @@ The objective of *Continuous Testing* is to achieve constant feedback on your ch
 1. Create a new file named `.github/workflows/ct.yml`
 1. Copy the code below to the newly created file:
     ```yaml
-    ---
     ########
     ########
     ## CT ##

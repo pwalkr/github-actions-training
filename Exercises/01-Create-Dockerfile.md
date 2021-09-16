@@ -1,6 +1,7 @@
 # Create the dockerfile
 
-In this session, we are going to be deploying an application within a **Docker** container. Before we can deploy our app, we need to begin setting up a foundation to make changes to.
+In this session, we are going to be deploying an application within a **Docker** container. Before we can deploy our app, we need to begin setting up a foundation to make changes to. In this demo, we are using [**myoung34/github-runner**](https://hub.docker.com/r/myoung34/github-runner) from DockerHub, but you can replace that with other base image.
+
 
 ## Exercise: Add Dockerfile
 
@@ -17,7 +18,7 @@ In this session, we are going to be deploying an application within a **Docker**
       #########################################
       #########################################
 
-      # This is a copy of the GitHub Action runner
+      # This is a copy of the GitHub Action runner. You can replace this base image with other base image.
       FROM myoung34/github-runner:latest
 
       #########################################
@@ -86,3 +87,7 @@ In this session, we are going to be deploying an application within a **Docker**
 
 1. Commit the file.
 1. Open a pull request and merge the `Docker` branch into the `main` branch.
+
+# CLEAN UP: Delete the Docker branch file
+
+We want to delete the branch **Docker** after we merged with the change. Otherwise, **GitHub Actions** pipeline will trigger for all the branch changes we have later. Make sure to delete the branch **Docker** branch once you merged this branch to the **main** branch.

@@ -4,6 +4,19 @@ The goal of these exercises is to create a CI/CT/CD workflow with GitHub Actions
 
 As you work progressively along all the ordered files, your workflow will become more complex and thorough.
 
+### File Structures 🏗️
+
+Before you go through these exercises, please be aware of the existing file contents and structures in this repository.
+
+| File/Folder name | What it is for |
+| ---------------- | -------------- |
+| Exercises 📁 | Directory that you are looking at it! This folder contains the list of exercises you can go through to learn GitHub Actions |
+| dependencies 📁 | This directory contains the files that can be enabled from **Dockerfile** 🐳 to install dependencies for different programming run time. You will create this Dockefile 🐳 from [Create Dockerfile](./01-Create-Dockerfile.md) |
+| library  📁 | This directory contains a sample [**entrypoint.sh**](../library/entrypoint.sh) that is called from **Dockerfile** 🐳 to run the application. Feel free to explore and to modify |
+
+
+
+
 ### Steps 1: Create Continuous Integration (CI)
 
 - [Create Dockerfile](./01-Create-Dockerfile.md)
