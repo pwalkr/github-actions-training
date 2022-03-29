@@ -51,7 +51,7 @@ The objective of *Continuous Testing* is to achieve constant feedback on your ch
           # Checkout the code base #
           ##########################
           - name: Checkout Code
-            uses: actions/checkout@v2
+            uses: actions/checkout@v3
             with:
             # Full git history is needed to get a proper list of changed files within `super-linter`
                 fetch-depth: 0
@@ -60,7 +60,7 @@ The objective of *Continuous Testing* is to achieve constant feedback on your ch
           # Run Linter against code base #
           ################################
           - name: Lint Code Base
-            uses: github/super-linter@v3
+            uses: github/super-linter@v4
             env:
               VALIDATE_ALL_CODEBASE: true
               DEFAULT_BRANCH: main
