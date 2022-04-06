@@ -73,10 +73,19 @@ jobs:
           tags: super-cool-image:latest
           outputs: type=docker,dest=/tmp/myimage.tar
 
+      ###########################################
+      # Upload the artifact to the workflow run #
+      ###########################################
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: myimage
+          path: /tmp/myimage.tar
+
   #############################################
   # Second build job to ingest built artifact #
   #############################################
-  use:
+  ConsumeContainer:
     runs-on: ubuntu-latest
     needs: build
     steps:
