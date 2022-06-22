@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.description = "A simple hello world gem"
   s.authors     = ["Admiral Awkbar"]
   s.email       = 'admiralawkbar@github.com'
-  s.files       = ["lib/hola.rb"]
+  s.files       = ["lib/hello_world.rb"]
   s.homepage    =
     'https://rubygems.pkg.github.com/ORG_NAME/REPO_NAME'
   s.license       = 'MIT'
