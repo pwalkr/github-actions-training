@@ -82,6 +82,8 @@ When we push a change to a branch, the GitHub Action will clone the repository c
 
 ## Running your GitHub Action
 
+1. Remove super linter to get checks passing.
+
 1. Open a pull request with the `CT` branch into the `main` branch.
 
     In the pull request, you will see the GitHub Actions job running and its results. You can review the logs of the run and the steps it took by clicking on **Details** next to the GitHub Action. You can experiment with this Action, but making additional updates to the code and committing it.
