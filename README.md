@@ -1,4 +1,4 @@
-# GitHub-Actions-Docker-training
+# GitHub-Actions-Training
 Training exercise repository for GitHub Actions using a docker base. This repository should be cloned and used for training purposes. Once cloned, the user can follow the directions inside to help understand how to set up basic and complex **Github Actions**.
 
 ## How to Use
