@@ -1,0 +1,14 @@
+# This is a basic workflow to help you get started with Actions
+name: Centralized Build
+
+# Set the job to run manually
+on:
+  push:
+    branches-ignore: main
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  centralized-job:
+    uses: samueljmello/centralized-workflow/.github/workflows/test.yml@main
+    with:
+      VAR: "static"
